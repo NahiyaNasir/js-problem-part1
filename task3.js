@@ -5,21 +5,26 @@ Write a function to count the number of vowels in a string.
 
  */
   
-     function vowelsNumber(array, vowels){
-     
+     function vowelsNumber(str){
       let count=0;
-      
-      for( const items of array){
-        console.log(array.split(''))
-          if(items===vowels){
-              count++;
-          }
+      const vowels= ('a,e,i,o,u')
+      for( const  chr of str){
+        if(vowels.includes(chr)){
+             count++;
+        }
       }
+
+
+     
        return count
   }
 
-  const str=  vowelsNumber('aaaa i am of precaution')
+
  
-  const find= ('a,e,i,o,u')
-  const  count=vowelsNumber(str, find)
-  console.log(count)
+
+
+  const nan= vowelsNumber( 'aaaa i am of precaution')
+ 
+ 
+ 
+  console.log( nan)
